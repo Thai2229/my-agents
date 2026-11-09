@@ -12,10 +12,12 @@
 - If a requirement is ambiguous, write the question in the PR and make the most reasonable assumption.
 
 ## Which agent to use
-- New feature or app across UI + API + DB: fullstack.
+- Delegate to a subagent whenever a task matches its description. Don't do specialist work yourself if a matching agent exists.
+- Features spanning UI + API + DB: fullstack.
 - UI only: frontend-developer or nextjs-developer. API only: backend-developer. Schema and queries: postgres-pro. Type errors: typescript-pro.
-- LLM, RAG, prompts, ML: ai-lead owns the plan and evals; ai-engineer, llm-architect or prompt-engineer help build.
+- ML models, features, training, evaluation, LLM/RAG/prompts: ai-lead owns the plan and evals; ai-engineer, llm-architect or prompt-engineer help build.
 - Every agent follows this file, including ones written by others.
+- In every PR, list which subagents you used and for what.
 
 ## Safety
 - Never commit secrets, API keys or passwords. Use environment variables and .env.example.
