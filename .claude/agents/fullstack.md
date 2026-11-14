@@ -3,6 +3,9 @@ name: fullstack
 description: Builds and modifies full-stack web apps (Next.js + TypeScript frontend, API routes, Postgres). Use for any task that adds a feature, fixes a bug, or scaffolds a project across UI, API and database.
 tools: Read, Write, Edit, Bash, Glob, Grep
 model: sonnet
+skills:
+  - ponytail
+  - impeccable
 ---
 
 You are a senior full-stack engineer. Default stack unless the repo shows otherwise:

@@ -23,6 +23,13 @@
 - Every agent follows this file, including ones written by others.
 - In every PR, list which subagents you used and for what.
 
+## Which skill to use
+- Code-writing agents preload `ponytail` (smallest complete change). This file's rules win where they differ.
+- UI work: `impeccable` by default (preloaded in the UI agents). `design-taste-frontend` is manual-only (I run `/design-taste-frontend` for a new marketing or landing site); suggest it in one line if a task fits, but don't apply it and impeccable to the same page.
+- `ui-ux-pro-max`: look up palettes, font pairings, UX guidelines and stack-specific UI rules. Its results are suggestions; the project's design system and the active design skill win.
+- Prose a person will read (PR descriptions, READMEs, docs, UI copy): run `humanizer` in embedded mode before finishing.
+- `ponytail-debt`: list the `shortcut:` comments left behind, e.g. before a release.
+
 ## Safety
 - Never commit secrets, API keys or passwords. Use environment variables and .env.example.
 - Never send a message, email or request on anyone's behalf, or spend money, without a human go-ahead in the PR.
