@@ -11,8 +11,10 @@ rm -rf /tmp/my-agents
 if git clone -q --depth 1 https://github.com/Thai2229/my-agents /tmp/my-agents; then
   mkdir -p ~/.claude/agents
   cp /tmp/my-agents/.claude/agents/*.md ~/.claude/agents/
-  mkdir -p ~/.claude/skills
-  cp -r /tmp/my-agents/.claude/skills/. ~/.claude/skills/
+  if [ -d /tmp/my-agents/.claude/skills ]; then
+    mkdir -p ~/.claude/skills
+    cp -r /tmp/my-agents/.claude/skills/. ~/.claude/skills/
+  fi
   cp /tmp/my-agents/CLAUDE.md ~/.claude/CLAUDE.md
 fi
 ```
